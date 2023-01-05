@@ -1,0 +1,42 @@
+@use '../abstracts/colors' as *;
+
+.flex {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.light{
+  background-color: $background;
+  transition: background-color 1000ms linear;
+  p{
+    color: $dark-900 ; 
+  }
+
+  .bar-item {
+    background-color: #f2f3f5;
+    transition: background-color 1000ms linear;
+    .bar-icon{
+      color: black;
+    }
+  }
+}
+
+.dark{
+  background-color: $background-dark;
+  transition: background-color 1000ms linear;
+
+  p{
+    color: white ;
+  }
+
+  .bar-item{
+    background-color: $dark-500;
+    transition: background-color 1000ms linear;
+    .bar-icon {
+      color: black;
+    }
+  }
+
+}

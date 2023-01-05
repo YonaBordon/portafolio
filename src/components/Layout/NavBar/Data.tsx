@@ -10,26 +10,26 @@ export const Data: Items[] = [
 	{
 		title: 'Inicio',
 		path: '/',
-		icon: <TiIcons.IoHomeOutline size={32} />,
+		icon: <TiIcons.IoHomeOutline size={25} />,
 	},
 	{
 		title: 'Sobre Mi',
-		path: '/about-me',
-		icon: <TiIcons.IoPersonOutline size={32} />,
+		path: '/SobreMi',
+		icon: <TiIcons.IoPersonOutline size={25} />,
 	},
 	{
 		title: 'Habilidades',
-		path: '/skills',
-		icon: <TiIcons.IoDocumentAttachOutline size={32} />,
+		path: '/Habilidades',
+		icon: <TiIcons.IoDocumentAttachOutline size={25} />,
 	},
 	{
 		title: 'Projects',
-		path: '/projects',
-		icon: <TiIcons.IoCodeSlashOutline size={32} />,
+		path: '/Proyectos',
+		icon: <TiIcons.IoCodeSlashOutline size={25} />,
 	},
 	{
 		title: 'Contacto',
-		path: '/contact',
-		icon: <TiIcons.IoMailOutline size={32} />,
+		path: '/Contacto',
+		icon: <TiIcons.IoMailOutline size={25} />,
 	},
 ];

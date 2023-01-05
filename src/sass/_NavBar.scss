@@ -5,16 +5,22 @@
   bottom: 2rem;
   transform: translate(-50%, -50%);
   margin: 0 auto;
+  
+  .bar-item {
+    display: flex;
+    align-items: center;
+    margin: 0 .5rem;
+    padding: .5rem .7rem;
+    border-radius: 50%;;
+  
+    .bar-icon {
+      color: black;
+    }
+   }
 }
 
-.bar-item{
-  margin: 0 .2rem;
-  padding: .1rem;
-  border-radius: 50%;
-  color: black;
-  background-color: #b2bbc4;
-}
 
-.bar-icon{
-  color: black;
+
+.theme-item {
+  border-style: none;
 }

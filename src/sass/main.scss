@@ -1,7 +1,11 @@
 @import './NavBar';
+@import './base/reset';
 
 html {
   box-sizing: border-box;
+}
+body{
+  margin: 0;
 }
 
 *,
