@@ -1,22 +1,22 @@
 import { useContext } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-import Home from './pages/Home/Home';
-import Layout from './components/Layout/Layout';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 
 import { ThemeContext } from './context/ThemeContext';
 
-import './sass/main.scss';
 import AboutMe from './pages/AboutMe/AboutMe';
-import Skills from './pages/Skills/Skills';
-import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
+import Home from './pages/Home/Home';
+import Layout from './components/Layout/Layout';
+import Projects from './pages/Projects/Projects';
+import Skills from './pages/Skills/Skills';
+
+import './sass/main.scss';
 
 function App() {
 	const { theme } = useContext(ThemeContext);
 	return (
-		<div className={`${theme} flex`}>
-			<BrowserRouter>
+		<HashRouter>
+			<div className={`${theme} flex`}>
 				<Routes>
 					<Route path='/' element={<Layout />}>
 						<Route index element={<Home />} />
@@ -26,8 +26,8 @@ function App() {
 						<Route path='/Contacto' element={<Contact />} />
 					</Route>
 				</Routes>
-			</BrowserRouter>
-		</div>
+			</div>
+		</HashRouter>
 	);
 }
 
