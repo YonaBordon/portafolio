@@ -16,7 +16,12 @@
 
   .bar-item {
     background-color: #f2f3f5;
-    transition: background-color 1000ms linear;
+    transition: background-color 100ms linear;
+
+    &:hover{ 
+      background-color: $green-600;
+    }
+
     .bar-icon{
       color: black;
     }
@@ -33,7 +38,12 @@
 
   .bar-item{
     background-color: $dark-500;
-    transition: background-color 1000ms linear;
+    transition: background-color 100ms linear;
+
+    &:hover {
+      background-color: $green-600;
+    }
+
     .bar-icon {
       color: black;
     }

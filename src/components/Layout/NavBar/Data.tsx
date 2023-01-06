@@ -23,7 +23,7 @@ export const Data: Items[] = [
 		icon: <TiIcons.IoDocumentAttachOutline size={25} />,
 	},
 	{
-		title: 'Projects',
+		title: 'Proyectos',
 		path: '/Proyectos',
 		icon: <TiIcons.IoCodeSlashOutline size={25} />,
 	},

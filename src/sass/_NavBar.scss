@@ -11,10 +11,21 @@
     align-items: center;
     margin: 0 .5rem;
     padding: .5rem .7rem;
-    border-radius: 50%;;
+    border-radius: 50%;
   
     .bar-icon {
       color: black;
+    }
+    .bar-title{
+      display: none;
+    }
+    &:hover{
+      flex-direction: column;
+      .bar-title{
+        position: absolute;
+        display: block;
+        top: 2.7rem;
+      }
     }
    }
 }
