@@ -16,7 +16,7 @@ function App() {
 	const { theme } = useContext(ThemeContext);
 	return (
 		<div className={`${theme} flex`}>
-			<BrowserRouter basename='portafolio'>
+			<BrowserRouter>
 				<Routes>
 					<Route path='/' element={<Layout />}>
 						<Route index element={<Home />} />
