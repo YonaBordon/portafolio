@@ -1,15 +1,5 @@
-@import './NavBar';
 @import './base/reset';
 
-html {
-  box-sizing: border-box;
-}
-body{
-  margin: 0;
-}
+@import './layout/NavBar';
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+@import './pages/home';

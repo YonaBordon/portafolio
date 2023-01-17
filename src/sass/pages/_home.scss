@@ -1,0 +1,23 @@
+.home-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: .5rem;
+  padding: 1rem; 
+  height: 90%;
+  
+
+  .img{
+    width: 50%;
+    height: 15rem;
+    border-radius: 1rem;
+    margin: 1rem;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .home-container{
+    flex-direction: row;
+  }
+}
