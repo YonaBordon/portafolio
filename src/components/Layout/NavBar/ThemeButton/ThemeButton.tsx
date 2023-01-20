@@ -7,10 +7,7 @@ const ThemeButton = () => {
 
 	return (
 		<>
-			<div
-				className='bar-item theme-item'
-				onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-			>
+			<div className='theme-item' onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
 				{theme === 'light' ? (
 					<TiIcons.IoMoonOutline size={25} />
 				) : (

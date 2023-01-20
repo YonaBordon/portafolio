@@ -1,23 +1,34 @@
 .home-container{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: .5rem;
-  padding: 1rem; 
+  padding: 0 1.5rem; 
   height: 90%;
-  
 
-  .img{
-    width: 50%;
-    height: 15rem;
-    border-radius: 1rem;
-    margin: 1rem;
+  div {
+    h1{
+      font-size: 2.17rem;
+    }
+    p{
+      display: flex;
+      justify-content: flex-end;
+      font-size: .7rem;
+      margin-top: -1.5rem;
+    }
+
+    @media screen and (min-width: 768px) {
+      h1{
+        font-size: 4rem;
+      }
+      p{
+        font-size: 1rem;
+        margin-top: -3rem;
+      }
+    }
   }
-}
 
-@media screen and (min-width: 720px) {
-  .home-container{
-    flex-direction: row;
+  p{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
   }
 }

@@ -9,8 +9,8 @@ const NavBar = () => {
 	};
 
 	return (
-		<>
-			<div className='bar-container'>
+		<header>
+			<nav className='bar-container'>
 				{Data.map((item, index) => {
 					return (
 						<div key={index}>
@@ -25,9 +25,9 @@ const NavBar = () => {
 						</div>
 					);
 				})}
-				<ThemeButton />
-			</div>
-		</>
+			</nav>
+			<ThemeButton />
+		</header>
 	);
 };
 
