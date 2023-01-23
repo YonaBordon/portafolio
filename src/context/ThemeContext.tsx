@@ -6,8 +6,6 @@ interface Props {
 
 export const ThemeContext = createContext<any>({ theme: 'light', undefined });
 
-console.log(ThemeContext);
-
 export const ThemeProvider: React.FC<Props> = ({ children }) => {
 	const [theme, setTheme] = useState('light');
 	return <ThemeContext.Provider value={{ theme, setTheme }}>{children}</ThemeContext.Provider>;

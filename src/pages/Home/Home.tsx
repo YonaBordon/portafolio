@@ -1,4 +1,5 @@
 import Typed from 'react-typed';
+import SocialMedia from '../../components/Buttons/SocialMedia';
 
 const Home = () => {
 	return (
@@ -13,10 +14,11 @@ const Home = () => {
 					strings={['Front-End', 'Back End (en proceso...)']}
 					typeSpeed={150}
 					backSpeed={100}
+					smartBackspace
 					loop
 				/>
 			</h3>
-			<div>linkedin y git botones</div>
+			<SocialMedia />
 			<p>Navega por la pagina para saber mas sobre mi.</p>
 		</div>
 	);
