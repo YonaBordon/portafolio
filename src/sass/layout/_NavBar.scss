@@ -1,70 +1,68 @@
-.bar-container{
-  display: flex;
-  position: fixed;
-  left: 50%;
-  bottom: .3rem;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
-  
-  .bar-item {
-    display: flex;
-    align-items: center;
-    margin: 0 .5rem;
-    padding: .5rem .7rem;
-    border-radius: 50%;
-  
-    .bar-icon {
-      color: black;
-    }
-    .bar-title{
-      display: none;
-    }
-   }
+.bar-container {
+	display: flex;
+	position: fixed;
+	left: 50%;
+	bottom: 0.3rem;
+	transform: translate(-50%, -50%);
+	margin: 0 auto;
 
- }
-.theme-item {
-  border-style: none;
-  display: flex;
-  position: absolute;
-  align-items: center;
-  top: 2rem;
-  right: 2rem;
+	.bar-item {
+		display: flex;
+		align-items: center;
+		margin: 0 0.5rem;
+		padding: 0.5rem 0.7rem;
+		border-radius: 50%;
+
+		.bar-icon {
+			color: black;
+		}
+		.bar-title {
+			display: none;
+		}
+	}
 }
-  
+.theme-item {
+	border-style: none;
+	display: flex;
+	position: absolute;
+	align-items: center;
+	top: 1rem;
+	right: 1rem;
+}
+
 @media screen and (min-width: 768px) {
-  .bar-container{
-    position:sticky;
-    align-items: center;
-    justify-content: flex-start;
-    transform: none;
-    height: 4rem;
-    background-color: white;
-    padding: 0 1rem;
+	.bar-container {
+		position: sticky;
+		align-items: center;
+		justify-content: flex-start;
+		transform: none;
+		height: 4rem;
+		background-color: white;
+		padding: 0 1rem;
 
-    .active {
-      background: white !important;
-    }
+		.active {
+			background: white !important;
+		}
 
-    .bar-item{
-      border-radius: 0;
-      
-      text-decoration: none;
-      background: white;
-      padding: 0 0;
-      margin: 0 1.5rem;
+		.bar-item {
+			border-radius: 0;
 
-      .bar-icon{
-        display: none;
-      }
-      .bar-title{
-        position: relative;
-        display: inline-block;
-        
-      }
-    }
-  }
-    .theme-item {
-      top: 1rem;
-      right: 4rem;
-    }
+			text-decoration: none;
+			background: white;
+			padding: 0 0;
+			margin: 0 1.5rem;
+
+			.bar-icon {
+				display: none;
+			}
+			.bar-title {
+				position: relative;
+				display: inline-block;
+			}
+		}
+	}
+	.theme-item {
+		top: 1rem;
+		right: 4rem;
+	}
 }
